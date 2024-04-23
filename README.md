@@ -1,39 +1,22 @@
-# Material UI - CRA example with Tailwind CSS in TypeScript
 
-## How to use
+<h1 align="center"> Sistema de Gerenciamento de Usuáriosr </h1>
+<p align="justify"> Bem-vindo ao nosso Sistema de Gerenciamento de Usuários, uma plataforma robusta projetada para facilitar o controle e a administração de informações de usuários em ambientes corporativos. Este sistema é ideal para organizações que necessitam de uma solução eficiente para gerir os dados de seus colaboradores. </p>
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+## Funcionalidades Principais
 
-<!-- #default-branch-switch -->
+### Sistema de Login Seguro
+Acesse o sistema com credenciais seguras. O processo de autenticação é projetado para proteger e garantir o acesso confiável à plataforma.
 
-```bash
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2 material-ui-master/examples/material-ui-cra-tailwind-ts
-cd material-ui-cra-tailwind-ts
-```
+### CRUD de Usuários
+O sistema permite a Criação, Leitura, Atualização e Remoção (CRUD) de usuários de maneira intuitiva e eficaz. Administradores têm acesso completo para gerenciar todas as entradas, enquanto usuários regulares podem visualizar e editar seus próprios perfis.
 
-Install it and run:
+### Permissões Diferenciadas
+- **Administradores**: Podem gerenciar todos os usuários, incluindo adicionar novos usuários, editar informações de qualquer usuário e deletar usuários do sistema.
+- **Usuários Comuns**: Têm a capacidade de visualizar todos os usuários e editar suas próprias informações, garantindo que possam manter seus dados atualizados.
 
-```bash
-npm install
-npm start
-```
-
-or:
-
-<!-- #default-branch-switch -->
-
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/material-ui-cra-tailwind-ts)
-
-## The idea behind the example
-
-<!-- #default-branch-switch -->
-
-This example demonstrates how you can use [Tailwind CSS](https://tailwindcss.com/) and [Create React App](https://github.com/facebookincubator/create-react-app) together with Material UI.
-It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI v5.
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation and continue by browsing the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+## Tecnologias Utilizadas
+![Material-UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![Rematch](https://img.shields.io/badge/Rematch-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-007ACC?style=for-the-badge)
+![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=for-the-badge&logo=react-hook-form&logoColor=white)
