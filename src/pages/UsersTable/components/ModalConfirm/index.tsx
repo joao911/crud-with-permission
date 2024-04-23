@@ -23,7 +23,7 @@ const ModalConfirm: React.FC<IModalConfirmProps> = ({
         <DialogTitle id="alert-dialog-title" textAlign={"center"}>
           Deseja excluir este usuário?
         </DialogTitle>
-        <Box gap={2}>
+        <Box gap={2} display={"flex"} justifyContent={"center"}>
           <Button
             fullWidth
             variant="contained"

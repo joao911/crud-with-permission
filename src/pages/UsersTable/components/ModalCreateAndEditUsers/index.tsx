@@ -172,6 +172,7 @@ const ModalCreateAndEditUsers: React.FC<IModalCreateAndEditUsersProps> = ({
           helperText={errors.password?.message?.toString()}
           label="Senha"
           variant="standard"
+          type={showPassword ? "text" : "password"}
           InputProps={{
             endAdornment: (
               <InputAdornment position="end">
@@ -193,6 +194,7 @@ const ModalCreateAndEditUsers: React.FC<IModalCreateAndEditUsersProps> = ({
           helperText={errors.confirmPassword?.message?.toString()}
           label="Confirme a senha"
           variant="standard"
+          type={showPasswordConfirm ? "text" : "password"}
           InputProps={{
             endAdornment: (
               <InputAdornment position="end">

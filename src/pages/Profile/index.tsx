@@ -1,19 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Avatar,
   Box,
   Button,
+  IconButton,
+  InputAdornment,
   MenuItem,
   TextField,
   Typography,
 } from "@mui/material";
 import * as zod from "zod";
-import { Controller, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { map } from "lodash";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { useHooks } from "../../hooks";
 export const Profile: React.FC = () => {
   const { userLogged, dispatch } = useHooks();
+  const [showPassword, setShowPassword] = useState(false);
+  const [showPasswordConfirm, setShowPasswordConfirm] = useState(false);
 
   const passwordSchema = zod
     .string()
@@ -115,6 +120,23 @@ export const Profile: React.FC = () => {
             helperText={errors.password?.message?.toString()}
             label="Senha"
             variant="standard"
+            type={showPassword ? "text" : "password"}
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton
+                    aria-label="toggle password visibility"
+                    onClick={() => setShowPasswordConfirm(!showPassword)}
+                  >
+                    {showPasswordConfirm ? (
+                      <VisibilityIcon />
+                    ) : (
+                      <VisibilityOffIcon />
+                    )}
+                  </IconButton>
+                </InputAdornment>
+              ),
+            }}
           />
           <TextField
             {...register("confirmPassword")}
@@ -124,6 +146,23 @@ export const Profile: React.FC = () => {
             helperText={errors.confirmPassword?.message?.toString()}
             label="Confirme a senha"
             variant="standard"
+            type={showPasswordConfirm ? "text" : "password"}
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton
+                    aria-label="toggle password visibility"
+                    onClick={() => setShowPasswordConfirm(!showPasswordConfirm)}
+                  >
+                    {showPasswordConfirm ? (
+                      <VisibilityIcon />
+                    ) : (
+                      <VisibilityOffIcon />
+                    )}
+                  </IconButton>
+                </InputAdornment>
+              ),
+            }}
           />
           <TextField
             {...register("email")}

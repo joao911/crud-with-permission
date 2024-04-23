@@ -1,15 +1,6 @@
 {
   "users": [
     {
-      "id": "947409fa-aad7-44e2-91c2-0b8c33894713",
-      "name": "Felipe",
-      "lastName": "soares",
-      "password": "Front@4254",
-      "confirmPassword": "Front@4254",
-      "email": "felipe@gmail.com",
-      "role": "Administrador"
-    },
-    {
       "id": "e3ef22ee-39f4-45fc-ac63-14e614b1bda1",
       "name": "teste",
       "lastName": "teste 02",
