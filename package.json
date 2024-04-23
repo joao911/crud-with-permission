@@ -1,0 +1,58 @@
+{
+  "name": "material-ui-cra-tailwind-ts",
+  "version": "5.0.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@hookform/resolvers": "^3.3.4",
+    "@mui/icons-material": "^5.15.14",
+    "@mui/material": "^5.15.14",
+    "@rematch/core": "^2.2.0",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
+    "@types/jest": "latest",
+    "@types/lodash": "^4.17.0",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/uuid": "^9.0.8",
+    "autoprefixer": "latest",
+    "axios": "^1.6.8",
+    "json-server": "^1.0.0-alpha.23",
+    "lodash": "^4.17.21",
+    "postcss": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-hook-form": "^7.51.2",
+    "react-redux": "^9.1.1",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "latest",
+    "redux": "^5.0.1",
+    "tailwindcss": "latest",
+    "typescript": "latest",
+    "uuid": "^9.0.1",
+    "web-vitals": "latest",
+    "zod": "^3.22.4"
+  },
+  "scripts": {
+    "start": "set PORT=3200 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "serve": "json-server --watch db.json --port 8000 -d 500"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
